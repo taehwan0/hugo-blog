@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Buddy</title>
+    <link>http://localhost:1313/posts/</link>
+    <description>Recent content in Posts on Buddy</description>
+    <generator>Hugo -- 0.147.2</generator>
+    <language>ko-KR</language>
+    <lastBuildDate>Mon, 19 May 2025 12:56:57 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Velog에서 Hugo로 블로그 이전하기</title>
+      <link>http://localhost:1313/posts/first-post/</link>
+      <pubDate>Mon, 19 May 2025 12:56:57 +0900</pubDate>
+      <guid>http://localhost:1313/posts/first-post/</guid>
+      <description>&lt;h2 id=&#34;왜&#34;&gt;왜&lt;/h2&gt;
+&lt;p&gt;취업 이전에 깔짝,, 그리고 취업 이후에도 동기들과 블로그 쓰기 내기를 하면서 또 깔짝,, 두번의 깔짝으로 Velog에 글을 작성했었다.
+개발 공부를 하고 싶은 마음은 항상 있었는데 회사에 치이는 어엿한 개발자가 되고나니 만사가 귀찮은 것도 있었고,
+사회 생활을 하면서 새로운 즐거움들을 많이 경험하게 되어서 그랬을까?
+언제부턴가 자연스럽게 블로그를 쓰지 않게 됐다. (그렇다고 글을 많이 쓴 것도 아니고 자주  쓴 것도 아니고..)&lt;/p&gt;
+&lt;p&gt;그러다가 요즘 들어서 다시 블로그를 쓰고 싶다는 생각이 들면서 직접 구축하기로 마음을 먹었는데,
+&lt;strong&gt;직접 호스팅 해보고 싶다는 욕심?로망?&lt;/strong&gt; 그리고 &lt;strong&gt;Velog는 너무 보여지는 느낌이라 부끄러워서&lt;/strong&gt; Hugo를 선택했다.
+보다 더 아지트 같은 느낌으로 자유롭게 뻘글도 쓰고, 공부도 하고, 장난감도 올려보려고 한다.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

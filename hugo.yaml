@@ -1,0 +1,36 @@
+baseURL: https://example.org/
+languageCode: ko-KR
+title: Buddy
+theme: ["PaperMod"]
+menu:
+  main:
+    - identifier: archives
+      name: Archives
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 20
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
+
+params:
+  homeInfoParams:
+    Title: 잡담과 망상을 좋아하는 개발자의 블로그
+    Content: |
+      안녕하세요. 개발자 장태환입니다.
+      
+      글에 관한 질문이나 지적은 언제든지 환영합니다.
+      
+      email: jang_taehwan@naver.com
+
+  socialIcons:
+    - name: "github"
+      url: "https://github.com/taehwan0"
+    - name: "linkedin"
+      url: "https://www.linkedin.com/in/%ED%83%9C%ED%99%98-%EC%9E%A5-9bb208310/"
