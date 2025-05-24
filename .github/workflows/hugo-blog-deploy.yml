@@ -11,8 +11,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      build_dir: ${{ steps.set_output.outputs.build_dir }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -25,24 +23,32 @@ jobs:
         with:
           hugo-version: 'latest'
 
-      - name: Build
+      - name: Build Hugo site
         run: hugo --minify
 
-      - name: Set output directory
-        id: set_output
-        run: echo "build_dir=public" >> $GITHUB_OUTPUT
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: hugo-public
+          path: ./public
 
   deploy:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to Server via SCP
+      - name: Download build artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: hugo-public
+          path: ./public
+
+      - name: Deploy via SCP
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          source: "./${{ needs.build.outputs.build_dir }}"
+          source: "./public"
           target: ${{ secrets.TARGET_PATH }}
           rm: true
