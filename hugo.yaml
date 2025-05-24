@@ -1,7 +1,7 @@
 baseURL: https://blog.buddyj.xyz/
 languageCode: ko-KR
 title: Buddy
-theme: ["PaperMod"]
+theme: ["paper-mod"]
 menu:
   main:
     - identifier: archives
