@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://blog.buddyj.xyz/
 languageCode: ko-KR
 title: Buddy
 theme: ["PaperMod"]
@@ -23,11 +23,45 @@ params:
   homeInfoParams:
     Title: 잡담과 망상을 좋아하는 개발자의 블로그
     Content: |
-      안녕하세요. 개발자 장태환입니다.
+      안녕하세요 👋, 백엔드 개발자 **장태환**입니다.    
+      이런저런 잡담과 망상, 개발을 기록하는 블로그입니다.  
+      글에 대한 **질문·지적·피드백**은 언제든지 환영합니다.
       
-      글에 관한 질문이나 지적은 언제든지 환영합니다.
+      ---
       
-      email: jang_taehwan@naver.com
+      ## ✨블로그에서 만날 수 있는 글들
+      > - **사이드 프로젝트 기록**
+      > - **DevOps 여정**
+      > - **스터디 노트**
+      > - **잡담**
+      
+      ---
+      
+      ### 🛠 주 기술 스택
+      
+      > - **Spring Boot, Java**
+      > - FastAPI, Python
+      > - RDBMS (MySQL·PostgreSQL)
+      > - Docker & Compose
+      > - RabbitMQ
+      > - Cloud (AWS, OCI)
+      
+      ### 🧭 기술 경험
+      
+      > - Kotlin
+      > - Express.js, NestJS
+      > - JavaScript, TypeScript
+      > - Flask
+      > - React
+  
+      ### 🚀 관심사 & 학습 예정
+      
+      > - Kotlin
+      > - Go
+      > - Kubernetes (K3s → K8s)
+      > - NestJS (TypeScript) 심화
+      > - Redis
+      > - OpenSearch, Elasticsearch
 
   socialIcons:
     - name: "github"
