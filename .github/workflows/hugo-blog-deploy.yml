@@ -5,20 +5,21 @@ on:
     branches:
       - master
 
-# 한 번에 하나의 워크플로우만 실행되도록 설정
 concurrency:
-    group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+    outputs:
+      build_dir: ${{ steps.set_output.outputs.build_dir }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-        # theme submodule를 포함하여 전체 리포지토리를 가져옵니다.
         with:
           submodules: true
-          fetch-depth: 0  #
+          fetch-depth: 0
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
@@ -27,14 +28,21 @@ jobs:
       - name: Build
         run: hugo --minify
 
-      - name: Deploy
+      - name: Set output directory
+        id: set_output
+        run: echo "build_dir=public" >> $GITHUB_OUTPUT
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Server via SCP
         uses: appleboy/scp-action@v1
         with:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
           port: ${{ secrets.SSH_PORT }}
-          source: "./public"
-          target: ${{ secrets.TARGET_PATH}}
+          source: "./${{ needs.build.outputs.build_dir }}"
+          target: ${{ secrets.TARGET_PATH }}
           rm: true
-
