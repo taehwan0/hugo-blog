@@ -4,14 +4,19 @@ title: Buddy
 theme: ["paper-mod"]
 menu:
   main:
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 10
     - identifier: archives
       name: Archives
       url: /archives/
       weight: 20
-    - identifier: search
-      name: Search
-      url: /search/
-      weight: 20
+    - identifier: portfolio
+      name: Portfolio
+      url: http://localhost:5173
+      weight: 30
+
 
 outputs:
   home:
@@ -26,7 +31,8 @@ params:
       안녕하세요 👋  
       백엔드 개발자 **장태환**입니다. 이런저런 잡담과 망상, 개발 관련 글을 기록합니다.  
       글에 대한 **질문과 피드백**은 언제든지 환영합니다.
-
+  ShowReadingTime: true
+  ShowCodeCopyButtons: true
   socialIcons:
     - name: "github"
       url: "https://github.com/taehwan0"
