@@ -38,3 +38,10 @@ params:
       url: "https://github.com/taehwan0"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/%ED%83%9C%ED%99%98-%EC%9E%A5-9bb208310/"
+  utteranc:
+    enable: true
+    repo: "taehwan0/hugo-blog"
+    issueTerm: "pathname"
+    label: "comments"
+    theme: "github-dark"
+    crossorigin: "anonymous"
