@@ -1,0 +1,8 @@
+<script src="https://utteranc.es/client.js"
+        repo="{{ .Site.Params.utteranc.repo }}"
+        issue-term="{{ .Site.Params.utteranc.issueTerm }}"
+        {{- if $.Site.Params.utteranc.label -}}label="{{ .Site.Params.utteranc.label }}"{{- end }}
+        theme="{{ .Site.Params.utteranc.theme }}"
+        crossorigin="{{ .Site.Params.utteranc.crossorigin }}"
+        async>
+</script>
