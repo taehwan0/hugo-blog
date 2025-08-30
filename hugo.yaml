@@ -12,11 +12,6 @@ menu:
       name: Archives
       url: /archives/
       weight: 20
-    - identifier: portfolio
-      name: Portfolio
-      url: http://localhost:5173
-      weight: 30
-
 
 outputs:
   home:
