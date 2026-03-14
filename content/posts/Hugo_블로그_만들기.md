@@ -42,7 +42,7 @@ hugo --help
 
 명령어가 꽤 많이 출력된다.
 
-![hugo help 명령어](/images/hugo-help-command.png)
+![hugo help 명령어](../../images/hugo-help-command.png)
 
 ### 1. 사이트 생성하고, 테마 설치하기
 
@@ -73,7 +73,7 @@ hugo server # 내장 서버로 실행
 - *기본적으로 1313 포트로 실행되나, 이미 해당 포트를 사용중이라면 다른 포트로 실행된다.*
 - *만약 포트를 직접 지정하고 싶다면 `hugo server --port 1414`와 같이 실행하면 된다.*
 
-![blog-첫-실행](/images/ananke-theme-blog.png)
+![blog-첫-실행](../../images/ananke-theme-blog.png)
 
 ### 2. 첫 글 작성하기
 
@@ -100,14 +100,14 @@ draft 글은 기본적으로 블로그에 표시되지 않는다.
 
 방금 생성한 포스트를 블로그에서 확인할 수 있다.
 
-![첫글-작성하기](/images/hugo-first-post.png)
+![첫글-작성하기](../../images/hugo-first-post.png)
 
 이제 포스트를 원하는 내용으로 작성하는데 markdown 형식이니 [Markdown Guide](https://www.markdownguide.org/basic-syntax/)를 참고해 작성하면 된다.
 아마 개발자라면 markdown을 많이 사용해봤을테니, 크게 어려움은 없을 것이다.
 
 *TMI: 보통 vscode를 markdown 편집기로 많이 사용하는 것 같은데, 나는 Jetbrains를 사랑해서 WebStorm으로 작성중이다.*
 
-![WebStorm 마크다운 에디터](/images/webstorm-markdown-editor.png)
+![WebStorm 마크다운 에디터](../../images/webstorm-markdown-editor.png)
 
 ### 3. 블로그 배포하기
 
@@ -204,7 +204,7 @@ private repository를 사용한다면 크게 상관이 없을 수는 있지만,
 public repository를 사용하거나 추후에 public으로 옮겨갈 가능성이 있다면,
 **서버의 민감한 정보들은 직접 코드에 작성하지 말고 GitHub Secrets에 저장해두자.**
 
-![github-action-시행착오](/images/hugo-github-actions-try.png)
+![github-action-시행착오](../../images/hugo-github-actions-try.png)
 
 오타나 잘못된 설정으로 약간의 시행착오가 있었지만, 성공적으로 배포를 했다.
 
