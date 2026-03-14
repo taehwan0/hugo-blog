@@ -3,8 +3,16 @@ languageCode: ko-KR
 title: Buddy
 theme: ["paper-mod"]
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+ignoreLogs:
+  - warning-goldmark-raw-html
+
 caches:
-  images: 
+  images:
     dir: :cacheDir/images
 
 menu:
