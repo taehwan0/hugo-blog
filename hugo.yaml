@@ -1,7 +1,12 @@
-baseURL: https://blog.buddyj.xyz/
+baseURL: https://taehwan0.github.io/hugo-blog/
 languageCode: ko-KR
 title: Buddy
 theme: ["paper-mod"]
+
+caches:
+  images: 
+    dir: :cacheDir/images
+
 menu:
   main:
     - identifier: search
