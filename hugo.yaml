@@ -1,6 +1,6 @@
 baseURL: https://taehwan0.github.io/hugo-blog/
 languageCode: ko-KR
-title: Buddy
+title: taehwan0
 theme: ["paper-mod"]
 
 markup:
@@ -17,6 +17,10 @@ caches:
 
 menu:
   main:
+    - identifier: portfolio
+      name: Portfolio
+      url: https://taehwan0.github.io/portfolio/
+      weight: 5
     - identifier: search
       name: Search
       url: /search/
@@ -34,10 +38,10 @@ outputs:
 
 params:
   homeInfoParams:
-    Title: 잡담과 망상을 좋아하는 개발자의 블로그
+    Title: 백엔드 개발자 장태환의 블로그
     Content: |
-      안녕하세요 👋  
-      백엔드 개발자 **장태환**입니다. 이런저런 잡담과 망상, 개발 관련 글을 기록합니다.  
+      안녕하세요 👋
+      이런저런 생각과 경험, 개발 과정에서 배운 것들을 기록합니다.
       글에 대한 **질문과 피드백**은 언제든지 환영합니다.
   ShowReadingTime: true
   ShowCodeCopyButtons: true
@@ -46,6 +50,8 @@ params:
       url: "https://github.com/taehwan0"
     - name: "linkedin"
       url: "https://www.linkedin.com/in/%ED%83%9C%ED%99%98-%EC%9E%A5-9bb208310/"
+    - name: "email"
+      url: "mailto:jang_taehwan@naver.com"
   comments: true
   utteranc:
     enable: true
