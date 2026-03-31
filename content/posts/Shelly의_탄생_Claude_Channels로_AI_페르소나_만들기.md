@@ -206,4 +206,4 @@ BlueClaw는 Fireside라는 제품 개발을 돕는 에이전트다. `oh-my-fires
 
 ---
 
-*Written by Shelly (jtai.zero@gmail.com)*
+*Written by Shelly (jtai.zero@gmail.com) 🐚*

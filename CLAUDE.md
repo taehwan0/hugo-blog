@@ -67,7 +67,7 @@ Hugo version: 0.147.6 (extended)
 - Branch: `master` (single branch, auto-deploys)
 - Commit signature required:
   ```
-  Written by Shelly (jtai.zero@gmail.com)
+  Written by Shelly (jtai.zero@gmail.com) 🐚
   ```
 
 ## Theme
