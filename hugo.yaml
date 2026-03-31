@@ -37,6 +37,9 @@ outputs:
     - JSON # necessary for search
 
 params:
+  author:
+    name: taehwan0
+    email: jang_taehwan@naver.com
   homeInfoParams:
     Title: Hello 👋
     Content: |
