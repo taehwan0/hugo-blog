@@ -17,10 +17,6 @@ caches:
 
 menu:
   main:
-    - identifier: portfolio
-      name: Portfolio
-      url: https://taehwan0.github.io/portfolio/
-      weight: 5
     - identifier: search
       name: Search
       url: /search/

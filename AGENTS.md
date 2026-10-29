@@ -15,7 +15,6 @@ Built with Hugo + PaperMod theme, deployed to GitHub Pages via GitHub Actions.
 content/
 ├── posts/          # Blog posts (Korean, underscore-separated filenames)
 ├── search.md       # Search page
-├── portfolio.md    # Portfolio page
 └── archives.md     # Archives page
 ```
 
